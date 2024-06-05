@@ -1,0 +1,181 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 40px;
+    color: #343838;
+}
+
+h2 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 30px;
+    color: #343838;
+}
+
+.columnas {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.menu ul {
+    list-style-type: none;
+    display: flex;
+    gap: 15px;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #008C9E;
+    padding: 10px 20px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.logo img {
+    height: 80px;
+}
+
+.title {
+    flex-grow: 1;
+    text-align: center;
+    font-size: 24px;
+}
+
+.login-button button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #00DFFC;
+    color: #343838;
+    border: none;
+    border-radius: 5px;
+}
+
+main {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    margin: 20px;
+    flex-grow: 1;
+}
+
+.column {
+    flex: 1;
+    margin: 0 10px;
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.columnap {
+    display: flex;
+    flex-direction: flex;
+}
+
+.column img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 10px;
+}
+
+.column-button {
+    background-color: #00DFFC;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-top: auto;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+}
+
+.column-button:hover {
+    background-color: #0056b3;
+}
+
+#col1 p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    color: #333;
+}
+#col2 p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    color: #333;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-top: 1px solid #e0e0e0;
+}
+
+.button-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    font-size: 16px;
+    text-decoration: none;
+    color: white;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.instagram-button {
+    background-color: #E4405F;
+}
+
+.instagram-button img {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.normal-button {
+    background-color: #007BFF;
+}
+
+.button:hover {
+    opacity: 0.8;
+}
+
+
+@media (max-width: 768px) {
+    .menu ul {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 1000px) {
+    .columnap {
+        flex-direction: column;
+    }
+}

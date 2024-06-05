@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>elGourmet - Diego Gera</title>
+    <link rel="stylesheet" href="./assets/estilos/styles2.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="./assets/imagenes/logo chef.JPG" alt="Logo" id="logo">
+        </div>
+        <nav class="menu">
+            <ul>
+                <li><a href="menuprincipal.html">Inicio</a></li>
+                <li><a href="acercadelchef.html">Acerca del chef</a></li>
+                <li><a href="lista.html">Recetas</a></li>
+                <li><a href="buscador.html">Buscar</a></li>
+            </ul>
+        </nav>
+        <h1 class="title">elGourmet - Diego Gera</h1>
+    </header>
+
+    <main>
+        <div class="contenedor2">
+            <section class="container2">
+                <h1 id="title" class="title"></h1>
+                <hr/>
+                <h1 id="ingrediente" class="title"></h1>
+                <hr/>
+                <article id="preparacion" class="preparacion">
+                </article>
+               <hr/>
+            </section>
+            <section class="formulario">
+                <h1 class="titulo">Busca alguna Receta?</h1>
+                <label>Ingrese el plato que desea buscar</label>
+                <input type="text" id="nombre" class="for" placeholder="ingrese la receta a buscar" required/>
+                <button onclick="buscar()">Buscar</button>
+            </section>
+        </div>
+        <script src="./assets/javascript/buscar.js"></script>
+    <footer>
+        <p>&copy; 2024 - Todos los derechos reservados.</p>
+    </footer>
+</body>
